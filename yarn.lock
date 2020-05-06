@@ -4696,10 +4696,10 @@ eslint-config-react-app@^5.2.1:
   dependencies:
     confusing-browser-globals "^1.0.9"
 
-eslint-config-zyhou@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/eslint-config-zyhou/-/eslint-config-zyhou-0.0.5.tgz#6fcaa5ee43a310cbf0956c29e39bd6571b378a9b"
-  integrity sha512-enlXdFIK9y+4oZCoVoVc+0xyM0F0n2YSIP6bdnT0LIc/+L++dW0hI3NOaTO8aM7XJLKjNH12Zhd9BJ0TuVlBmg==
+eslint-config-zyhou@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/eslint-config-zyhou/-/eslint-config-zyhou-0.0.6.tgz#2663d6c7f688c1316d1618fcc1a52e1001f23de7"
+  integrity sha512-H18fAcAqfP3AdflDdMF2Y2v9Op3nvc1gyzEGB4Vh7ATnK91OBDVN4PdRrLf1IXHbuRNLqw3L/T+ZgPdX+dzF/Q==
   dependencies:
     babel-eslint "^10.1.0"
     eslint-config-prettier "^6.10.1"
