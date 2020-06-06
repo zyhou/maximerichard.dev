@@ -1,11 +1,20 @@
 module.exports = {
     siteMetadata: {
-        title: `Gatsby Default Starter`,
-        description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-        author: `@gatsbyjs`,
+        title: `Maxime Richard - zyhou`,
+        description: `Maxime Richard, zyhou, full stack développeur sur Nancy`,
+        keywords: `Maxime Richard, zyhou, Nancy, Web, full stack, React, Node`,
+        author: `Maxime Richard`,
+        pseudo: `zyhou`,
+        siteUrl: `https://zyhou.github.io`,
+        githubRepoUrl: `https://github.com/zyhou/zyhou`,
+        linkedinUrl: `https://www.linkedin.com/in/maximerichard9/`,
+        twitterName: `@choukmax`,
+        twitterUrl: `https://twitter.com/choukmax`,
+        instagramUrl: `https://www.instagram.com/choukmax/`,
     },
     plugins: [
         `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-sitemap`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -15,20 +24,22 @@ module.exports = {
         },
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-postcss`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `gatsby-starter-default`,
-                short_name: `starter`,
+                name: `Maxime Richard`,
+                short_name: `Max`,
+                description: `Maxime Richard, zyhou, full stack développeur sur Nancy`,
                 start_url: `/`,
-                background_color: `#663399`,
-                theme_color: `#663399`,
+                homepage_url: `https://zyhou.github.io`,
+                background_color: `#1a1a1a`,
+                theme_color: `#1a1a1a`,
                 display: `minimal-ui`,
-                icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+                icon: `src/images/avatar.png`,
             },
         },
-        // this (optional) plugin enables Progressive Web App + Offline functionality
-        // To learn more, visit: https://gatsby.dev/offline
-        // `gatsby-plugin-offline`,
+        `gatsby-plugin-offline`,
+        `gatsby-plugin-robots-txt`,
     ],
 };

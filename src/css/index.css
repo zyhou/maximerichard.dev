@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Noe Display';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: local('NoeDisplay-Medium'), url('../fonts/noe-display-medium.woff2') format('woff2'),
+        url('../fonts/noe-display-medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-display: swap;
+    font-weight: 500;
+    src: local('JetBrainsMono-Medium'), url('../fonts/JetBrainsMono-Medium.woff2') format('woff2'),
+        url('../fonts/JetBrainsMono-Medium.woff') format('woff');
+}
