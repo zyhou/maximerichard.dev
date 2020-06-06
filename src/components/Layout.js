@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Github, Linkedin, Instagram, Twitter } from './Icons';
+import { Github, Linkedin, Twitch, Twitter } from './Icons';
 
 const Layout = ({ children }) => {
     const {
@@ -14,10 +14,10 @@ const Layout = ({ children }) => {
             site {
                 siteMetadata {
                     author
-                    githubRepoUrl
-                    linkedinUrl
-                    twitterUrl
-                    instagramUrl
+                    github
+                    linkedin
+                    twitter
+                    twitch
                 }
             }
 
@@ -68,7 +68,7 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="flex items-center justify-center">
                     <a
-                        href={siteMetadata.githubRepoUrl}
+                        href={siteMetadata.github}
                         aria-label="github repo"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -77,7 +77,7 @@ const Layout = ({ children }) => {
                         <Github />
                     </a>
                     <a
-                        href={siteMetadata.linkedinUrl}
+                        href={siteMetadata.linkedin}
                         aria-label="linkedin account"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -86,16 +86,16 @@ const Layout = ({ children }) => {
                         <Linkedin />
                     </a>
                     <a
-                        href={siteMetadata.instagramUrl}
-                        aria-label="instagram account"
+                        href={siteMetadata.twitch}
+                        aria-label="twitch account"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="p-2"
                     >
-                        <Instagram />
+                        <Twitch />
                     </a>
                     <a
-                        href={siteMetadata.twitterUrl}
+                        href={siteMetadata.twitter}
                         aria-label="twitter account"
                         target="_blank"
                         rel="noopener noreferrer"

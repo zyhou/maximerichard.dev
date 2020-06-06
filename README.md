@@ -1,15 +1,12 @@
 ## todo
 
-note blog on this new version
+home
 about
 image webp
 rel="noopener noreferrer"
-improve police integration
 api share web.dev
-sitemap
-offline
-accessibilite
 404 page
+accessibilite
 browserlist https://github.com/chrismwilliams/gatsby-emotion-tailwind-starter/blob/master/.babelrc
 webmention https://css-tricks.com/jumping-into-webmentions-with-nextjs-or-not/
 Perf https://www.gatsbyjs.org/docs/performance/
@@ -31,3 +28,5 @@ readme
 -   https://browserl.ist/, https://www.gatsbyjs.org/docs/browser-support/#specify-what-browsers-your-project-supports-using-browserslist
 -   improve images https://imgbot.net/
 -   static form https://www.staticforms.xyz/
+-   https://responsively.app/ multiple view design
+-   publier rapidement pour tester et commencer le referencement

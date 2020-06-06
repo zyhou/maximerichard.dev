@@ -11,16 +11,18 @@ const SEO = ({ description, title }) => {
             query {
                 site {
                     siteMetadata {
-                        title
+                        titleNavigation
+                        siteUrl
+                        logo
                         description
                         keywords
+                        lang
                         author
-                        siteUrl
-                        githubRepoUrl
-                        linkedinUrl
-                        twitterName
-                        twitterUrl
-                        instagramUrl
+                        github
+                        linkedin
+                        twitterHandle
+                        twitter
+                        twitch
                     }
                 }
             }
@@ -38,24 +40,19 @@ const SEO = ({ description, title }) => {
             name: siteMetadata.author,
         },
         url: siteMetadata.siteUrl,
-        image: 'https://zyhou.github.io/images/card.jpg',
+        image: siteMetadata.logo,
         headline: siteMetadata.author,
-        sameAs: [
-            siteMetadata.githubRepoUrl,
-            siteMetadata.linkedinUrl,
-            siteMetadata.twitterUrl,
-            siteMetadata.instagramUrl,
-        ],
+        sameAs: [siteMetadata.github, siteMetadata.linkedin, siteMetadata.twitter, siteMetadata.twitch],
     };
 
     return (
         <Helmet
             htmlAttributes={{
-                lang: 'fr_FR',
+                lang: siteMetadata.lang,
             }}
             title={title}
-            defaultTitle={siteMetadata.title}
-            titleTemplate={`%s | ${siteMetadata.title}`}
+            defaultTitle={siteMetadata.titleNavigation}
+            titleTemplate={`%s | ${siteMetadata.titleNavigation}`}
         >
             <meta name="description" content={metaDescription} />
             <meta name="keywords" content={siteMetadata.keywords} />
@@ -63,14 +60,14 @@ const SEO = ({ description, title }) => {
             <meta name="copyright" content={siteMetadata.author} />
             <meta property="og:locale" content="fr_FR" />
             <meta property="og:type" content="website" />
-            <meta property="og:title" content={title} />
+            <meta property="og:title" content={siteMetadata.title} />
             <meta property="og:description" content={metaDescription} />
             <meta name="og:image" content="https://zyhou.github.io/images/card.jpg" />
             <meta property="og:url" content={siteMetadata.url} />
             <meta property="twitter:card" content="summary" />
-            <meta name="twitter:site" content={siteMetadata.twitterName} />
-            <meta property="twitter:creator" content={siteMetadata.twitterName} />
-            <meta property="twitter:title" content={title} />
+            <meta name="twitter:site" content={siteMetadata.twitter} />
+            <meta property="twitter:creator" content={siteMetadata.twitterHandle} />
+            <meta property="twitter:title" content={siteMetadata.title} />
             <meta property="`twitter:description" content={metaDescription} />
             <meta name="twitter:image" content="https://zyhou.github.io/images/card.jpg" />
             <meta name="twitter:url" content={siteMetadata.url} />
