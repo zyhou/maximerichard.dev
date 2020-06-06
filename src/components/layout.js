@@ -39,19 +39,27 @@ const Layout = ({ children }) => {
                     <h1 className="font-bold">{siteMetadata.author}</h1>
                 </Link>
                 <nav>
-                    <Link to="/" className="px-4 hover:font-bold">
-                        /accueil
-                    </Link>
-                    <Link to="/apropos" className="px-4 hover:font-bold">
-                        /à propos
-                    </Link>
-                    <Link to="/contact" className="px-4 hover:font-bold">
-                        /contact
-                    </Link>
+                    <ul className="flex">
+                        <li className="w-24">
+                            <Link to="/" className="hover:font-bold">
+                                /accueil
+                            </Link>
+                        </li>
+                        <li className="w-24">
+                            <Link to="/apropos" className="hover:font-bold">
+                                /à propos
+                            </Link>
+                        </li>
+                        <li className="w-24">
+                            <Link to="/contact" className="hover:font-bold">
+                                /contact
+                            </Link>
+                        </li>
+                    </ul>
                 </nav>
             </header>
             <main>{children}</main>
-            <footer className="flex flex-col items-center justify-center mt-20 py-3 text-xl">
+            <footer className="flex flex-col items-center justify-center text-xl md:mt-12 lg:mt-16 xl:mt-20">
                 <div className="flex justify-center my-4">
                     <p className="px-1">© {new Date().getFullYear()}</p>
                     <a href="/" className="px-1 font-bold">

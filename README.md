@@ -29,3 +29,5 @@ readme
 -   json+ld, validateur https://search.google.com/structured-data/testing-tool/u/0/
 -   web.manifest, pwa, https://web.dev/add-manifest/
 -   https://browserl.ist/, https://www.gatsbyjs.org/docs/browser-support/#specify-what-browsers-your-project-supports-using-browserslist
+-   improve images https://imgbot.net/
+-   static form https://www.staticforms.xyz/

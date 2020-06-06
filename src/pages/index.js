@@ -21,8 +21,8 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO />
-            <section className="flex flex-wrap justify-between sm:justify-center">
-                <article className="m-4 w-2/3 sm:w-1/3">
+            <section className="flex flex-wrap justify-center lg:justify-between items-center my-6">
+                <article className="m-4 w-4/5 md:w-3/5 lg:w-2/5">
                     <h2 className="font-bold font-serif text-xl leading-tight mb-3">Salut, moi c&apos;est Maxime</h2>
                     <p className="mb-5">
                         Je suis développeur <strong>Javascript</strong> et <strong>Node</strong>
@@ -34,7 +34,10 @@ const IndexPage = () => {
                         En savoir plus
                     </Link>
                 </article>
-                <Img className="w-full sm:w-1/3 rounded-md object-contain" fluid={desktopImage.childImageSharp.fluid} />
+                <Img
+                    className="m-4 w-full sm:w-4/5 md:w-3/5 lg:w-2/5  flex-wrap rounded-md object-contain"
+                    fluid={desktopImage.childImageSharp.fluid}
+                />
             </section>
         </Layout>
     );
