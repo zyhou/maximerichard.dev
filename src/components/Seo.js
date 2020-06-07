@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import metaImage from '../images/avatar.png';
+import avatar from '../images/avatar.png';
 
 const SEO = ({ description, title }) => {
     const {
@@ -31,6 +31,7 @@ const SEO = ({ description, title }) => {
     );
 
     const metaDescription = description || siteMetadata.description;
+    const metaImage = `${siteMetadata.siteUrl}${avatar}`;
     const jsonLdObj = {
         '@context': 'http://schema.org',
         '@type': 'WebSite',
