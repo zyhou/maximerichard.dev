@@ -11,7 +11,7 @@ const SEO = ({ description, title }) => {
             query {
                 site {
                     siteMetadata {
-                        titleNavigation
+                        title
                         siteUrl
                         logo
                         description
@@ -51,8 +51,8 @@ const SEO = ({ description, title }) => {
                 lang: siteMetadata.lang,
             }}
             title={title}
-            defaultTitle={siteMetadata.titleNavigation}
-            titleTemplate={`%s | ${siteMetadata.titleNavigation}`}
+            defaultTitle={siteMetadata.title}
+            titleTemplate={`%s | ${siteMetadata.title}`}
         >
             <meta name="description" content={metaDescription} />
             <meta name="keywords" content={siteMetadata.keywords} />

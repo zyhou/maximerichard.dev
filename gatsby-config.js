@@ -3,7 +3,6 @@ const config = require('./config');
 module.exports = {
     siteMetadata: {
         title: config.title,
-        titleNavigation: config.titleNavigation,
         siteUrl: config.siteUrl,
         logo: config.logo,
         description: config.description,

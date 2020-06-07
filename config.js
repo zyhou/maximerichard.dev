@@ -1,6 +1,5 @@
 module.exports = {
-    title: 'Maxime Richard', // Site Title
-    titleNavigation: 'Maxime Richard - zyhou', // Navigation
+    title: 'Maxime Richard - zyhou', // Navigation and SEO
     titleShort: 'Max', // short_name for manifest
     siteUrl: 'https://maximerichard.dev/', // Domain of your site. No trailing slash!
     logo: 'src/images/avatar.png', // Used for SEO and manifest, path to your image

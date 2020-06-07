@@ -24,6 +24,8 @@ readme
 -   Voir les differnts plugings
 -   Revoir ses SVG https://jakearchibald.github.io/svgomg/ (reduire le poids + clean)
 -   json+ld, validateur https://search.google.com/structured-data/testing-tool/u/0/
+-   card preview https://cards-dev.twitter.com/validator
+-   robot.txt validator
 -   web.manifest, pwa, https://web.dev/add-manifest/
 -   https://browserl.ist/, https://www.gatsbyjs.org/docs/browser-support/#specify-what-browsers-your-project-supports-using-browserslist
 -   improve images https://imgbot.net/
