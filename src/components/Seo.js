@@ -54,16 +54,22 @@ const SEO = ({ description, title }) => {
             defaultTitle={siteMetadata.title}
             titleTemplate={`%s | ${siteMetadata.title}`}
         >
+            {/* General tags */}
             <meta name="description" content={metaDescription} />
             <meta name="keywords" content={siteMetadata.keywords} />
             <meta name="author" content={siteMetadata.author} />
             <meta name="copyright" content={siteMetadata.author} />
+            <meta name="image" content={siteMetadata.logo} />
+
+            {/* OpenGraph tags */}
             <meta property="og:locale" content="fr_FR" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={siteMetadata.title} />
             <meta property="og:description" content={metaDescription} />
             <meta name="og:image" content={siteMetadata.logo} />
             <meta property="og:url" content={siteMetadata.url} />
+
+            {/* Twitter Card tags */}
             <meta property="twitter:card" content="summary" />
             <meta name="twitter:site" content={siteMetadata.twitter} />
             <meta property="twitter:creator" content={siteMetadata.twitterHandle} />
@@ -71,6 +77,8 @@ const SEO = ({ description, title }) => {
             <meta property="`twitter:description" content={metaDescription} />
             <meta name="twitter:image" content={siteMetadata.logo} />
             <meta name="twitter:url" content={siteMetadata.url} />
+
+            {/* Schema.org JSON-LD */}
             <script type="application/ld+json">{JSON.stringify(jsonLdObj)}</script>
         </Helmet>
     );

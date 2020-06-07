@@ -4,7 +4,7 @@ module.exports = {
     siteMetadata: {
         title: config.title,
         siteUrl: config.siteUrl,
-        logo: config.logo,
+        logo: config.logoStatic,
         description: config.description,
         keywords: config.keywords,
         lang: config.lang,
@@ -40,7 +40,7 @@ module.exports = {
                 background_color: config.backgroundColor,
                 theme_color: config.themeColor,
                 display: config.display,
-                icon: config.siteLogo,
+                icon: config.logo,
             },
         },
         `gatsby-plugin-offline`,
