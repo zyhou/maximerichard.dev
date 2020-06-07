@@ -2,7 +2,7 @@ module.exports = {
     title: 'Maxime Richard', // Site Title
     titleNavigation: 'Maxime Richard - zyhou', // Navigation
     titleShort: 'Max', // short_name for manifest
-    siteUrl: 'https://zyhou.github.io', // Domain of your site. No trailing slash!
+    siteUrl: 'https://maximerichard.dev/', // Domain of your site. No trailing slash!
     logo: 'src/images/avatar.png', // Used for SEO and manifest, path to your image
     description: 'Maxime Richard, zyhou, full stack développeur sur Nancy.', // Used for SEO
     keywords: 'Maxime Richard, zyhou, Nancy, Web, full stack, React, Node', // Used for SEO

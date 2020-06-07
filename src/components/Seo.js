@@ -62,14 +62,14 @@ const SEO = ({ description, title }) => {
             <meta property="og:type" content="website" />
             <meta property="og:title" content={siteMetadata.title} />
             <meta property="og:description" content={metaDescription} />
-            <meta name="og:image" content="https://zyhou.github.io/images/card.jpg" />
+            <meta name="og:image" content={siteMetadata.logo} />
             <meta property="og:url" content={siteMetadata.url} />
             <meta property="twitter:card" content="summary" />
             <meta name="twitter:site" content={siteMetadata.twitter} />
             <meta property="twitter:creator" content={siteMetadata.twitterHandle} />
             <meta property="twitter:title" content={siteMetadata.title} />
             <meta property="`twitter:description" content={metaDescription} />
-            <meta name="twitter:image" content="https://zyhou.github.io/images/card.jpg" />
+            <meta name="twitter:image" content={siteMetadata.logo} />
             <meta name="twitter:url" content={siteMetadata.url} />
             <script type="application/ld+json">{JSON.stringify(jsonLdObj)}</script>
         </Helmet>
