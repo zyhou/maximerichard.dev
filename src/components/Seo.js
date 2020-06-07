@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
+import metaImage from '../images/avatar.png';
+
 const SEO = ({ description, title }) => {
     const {
         site: { siteMetadata },
@@ -13,7 +15,6 @@ const SEO = ({ description, title }) => {
                     siteMetadata {
                         title
                         siteUrl
-                        logo
                         description
                         keywords
                         lang
@@ -40,7 +41,7 @@ const SEO = ({ description, title }) => {
             name: siteMetadata.author,
         },
         url: siteMetadata.siteUrl,
-        image: siteMetadata.logo,
+        image: metaImage,
         headline: siteMetadata.author,
         sameAs: [siteMetadata.github, siteMetadata.linkedin, siteMetadata.twitter, siteMetadata.twitch],
     };
@@ -59,14 +60,14 @@ const SEO = ({ description, title }) => {
             <meta name="keywords" content={siteMetadata.keywords} />
             <meta name="author" content={siteMetadata.author} />
             <meta name="copyright" content={siteMetadata.author} />
-            <meta name="image" content={siteMetadata.logo} />
+            <meta name="image" content={metaImage} />
 
             {/* OpenGraph tags */}
             <meta property="og:locale" content="fr_FR" />
             <meta property="og:type" content="website" />
             <meta property="og:title" content={siteMetadata.title} />
             <meta property="og:description" content={metaDescription} />
-            <meta name="og:image" content={siteMetadata.logo} />
+            <meta name="og:image" content={metaImage} />
             <meta property="og:url" content={siteMetadata.url} />
 
             {/* Twitter Card tags */}
@@ -75,7 +76,7 @@ const SEO = ({ description, title }) => {
             <meta property="twitter:creator" content={siteMetadata.twitterHandle} />
             <meta property="twitter:title" content={siteMetadata.title} />
             <meta property="`twitter:description" content={metaDescription} />
-            <meta name="twitter:image" content={siteMetadata.logo} />
+            <meta name="twitter:image" content={metaImage} />
             <meta name="twitter:url" content={siteMetadata.url} />
 
             {/* Schema.org JSON-LD */}

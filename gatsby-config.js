@@ -4,7 +4,6 @@ module.exports = {
     siteMetadata: {
         title: config.title,
         siteUrl: config.siteUrl,
-        logo: config.logoStatic,
         description: config.description,
         keywords: config.keywords,
         lang: config.lang,
