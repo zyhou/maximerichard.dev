@@ -32,33 +32,35 @@ const Layout = ({ children }) => {
     `);
 
     return (
-        <div className="min-h-screen font-normal text-gray-700 max-w-6xl mx-auto">
+        <div className="antialiased font-normal text-gray-700 max-w-6xl mx-auto">
             <header className="flex flex-wrap items-center justify-center py-4 sm:justify-between">
                 <Link to="/" className="flex items-center">
                     <Img className="rounded-full m-2" fixed={avatarImage.childImageSharp.fixed} />
-                    <h1 className="font-bold">{siteMetadata.author}</h1>
+                    <span className="font-bold">{siteMetadata.author}</span>
                 </Link>
-                <nav>
+                <nav className="ml-6">
                     <ul className="flex">
                         <li className="w-24">
                             <Link to="/" className="hover:font-bold">
-                                /accueil
+                                accueil
                             </Link>
                         </li>
                         <li className="w-24">
                             <Link to="/apropos" className="hover:font-bold">
-                                /à propos
+                                à propos
                             </Link>
                         </li>
                         <li className="w-24">
                             <Link to="/contact" className="hover:font-bold">
-                                /contact
+                                contact
                             </Link>
                         </li>
                     </ul>
                 </nav>
             </header>
-            <main>{children}</main>
+            <main className="px-4 py-10 max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
+                {children}
+            </main>
             <footer className="flex flex-col items-center justify-center text-xl md:mt-12 lg:mt-16 xl:mt-20">
                 <div className="flex justify-center my-4">
                     <p className="px-1">© {new Date().getFullYear()}</p>
