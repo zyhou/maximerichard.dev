@@ -3,19 +3,41 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Noe Display';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 500;
-    src: local('NoeDisplay-Medium'), url('../fonts/noe-display-medium.woff2') format('woff2'),
-        url('../fonts/noe-display-medium.woff') format('woff');
-}
-
-@font-face {
     font-family: 'JetBrains Mono';
     font-style: normal;
     font-display: swap;
     font-weight: 500;
-    src: local('JetBrainsMono-Medium'), url('../fonts/JetBrainsMono-Medium.woff2') format('woff2'),
-        url('../fonts/JetBrainsMono-Medium.woff') format('woff');
+    src: local('JetBrainsMono-Medium'), url('../fonts/JetBrainsMono-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter var';
+    font-style: normal;
+    font-display: swap;
+    font-weight: '100 900';
+    src: local('Inter-roman.var-latin'), url('../fonts/Inter-roman.var-latin.woff2?3.13') format('woff2');
+}
+
+@font-face {
+    font-family: 'Inter var';
+    font-style: italic;
+    font-display: swap;
+    font-weight: '100 900';
+    src: local('Inter-roman.var-latin'), url('../fonts/Inter-italic.var-latin.woff2?3.13")') format('woff2');
+}
+
+.anchor {
+    @apply text-gray-500 absolute ml-2 pr-1 !important;
+}
+
+.anchor {
+    visibility: hidden;
+}
+
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+    visibility: visible;
 }
