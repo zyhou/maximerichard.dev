@@ -34,3 +34,4 @@ multiple theme
     -   www.maximerichard.dev. 0 CNAME maximerichard.dev.
     -   dig +nocmd +noall +answer maximerichard.dev A @dns109.ovh.net
     -   dig +nocmd +noall +answer www.maximerichard.dev A @dns109.ovh.net
+    -   google-site-verification dans ovh
