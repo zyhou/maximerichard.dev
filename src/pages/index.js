@@ -43,7 +43,7 @@ const IndexPage = () => {
                         Je partage ma veille technique sur{' '}
                         <a
                             className="text-underline text-blue-500 hover:text-blue-700"
-                            href="https://twitter.com/choukmax/"
+                            href="https://twitter.com/maximerdev/"
                         >
                             Twitter
                         </a>
