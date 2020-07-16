@@ -68,15 +68,15 @@ const SEO = ({ description, title }) => {
             <meta property="og:type" content="website" />
             <meta property="og:title" content={siteMetadata.title} />
             <meta property="og:description" content={metaDescription} />
-            <meta name="og:image" content={metaImage} />
+            <meta property="og:image" content={metaImage} />
             <meta property="og:url" content={siteMetadata.url} />
 
             {/* Twitter Card tags */}
-            <meta property="twitter:card" content="summary" />
+            <meta name="twitter:card" content="summary" />
             <meta name="twitter:site" content={siteMetadata.twitter} />
-            <meta property="twitter:creator" content={siteMetadata.twitterHandle} />
-            <meta property="twitter:title" content={siteMetadata.title} />
-            <meta property="`twitter:description" content={metaDescription} />
+            <meta name="twitter:creator" content={siteMetadata.twitterHandle} />
+            <meta name="twitter:title" content={siteMetadata.title} />
+            <meta name="twitter:description" content={metaDescription} />
             <meta name="twitter:image" content={metaImage} />
             <meta name="twitter:url" content={siteMetadata.url} />
 
