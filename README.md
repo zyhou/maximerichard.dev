@@ -4,8 +4,6 @@
 
 readme
 meta de partage
-redirect https://github.com/kentcdodds/kentcdodds.com/blob/master/static/_redirects https://docs.netlify.com/routing/redirects/
-404 page  
 accessibilite  
 projects  
 blog/writing  
