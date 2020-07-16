@@ -3,6 +3,7 @@
 ## todo
 
 readme
+meta de partage
 redirect https://github.com/kentcdodds/kentcdodds.com/blob/master/static/_redirects https://docs.netlify.com/routing/redirects/
 rel="noopener noreferrer"  
 404 page  
