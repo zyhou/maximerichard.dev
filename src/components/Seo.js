@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import avatar from '../images/avatar.png';
+import avatar from '../images/MAX_DARK.png';
 
 const SEO = ({ description, title }) => {
     const {

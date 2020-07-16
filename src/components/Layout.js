@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
                 }
             }
 
-            avatarImage: file(relativePath: { eq: "avatar.png" }) {
+            avatarImage: file(relativePath: { eq: "MAX_DARK.png" }) {
                 childImageSharp {
                     fixed(width: 48) {
                         ...GatsbyImageSharpFixed
