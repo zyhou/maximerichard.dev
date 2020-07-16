@@ -15,8 +15,8 @@ module.exports = {
     backgroundColor: '#1a1a1a',
 
     // Social component
-    twitter: 'https://twitter.com/maximerdev/',
-    twitterHandle: '@maximerdev',
+    twitter: 'https://twitter.com/rmaximedev/',
+    twitterHandle: '@rmaximedev',
     github: 'https://github.com/zyhou/',
     linkedin: 'https://www.linkedin.com/in/maximerichard9/',
     twitch: 'https://www.twitch.tv/zyhou',
