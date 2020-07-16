@@ -73,7 +73,7 @@ const Layout = ({ children }) => {
                         href={siteMetadata.github}
                         aria-label="github repo"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="p-2"
                     >
                         <Github />
@@ -82,7 +82,7 @@ const Layout = ({ children }) => {
                         href={siteMetadata.linkedin}
                         aria-label="linkedin account"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="p-2"
                     >
                         <Linkedin />
@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
                         href={siteMetadata.twitch}
                         aria-label="twitch account"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="p-2"
                     >
                         <Twitch />
@@ -100,7 +100,7 @@ const Layout = ({ children }) => {
                         href={siteMetadata.twitter}
                         aria-label="twitter account"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="p-2"
                     >
                         <Twitter />

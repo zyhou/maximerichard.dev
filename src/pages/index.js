@@ -33,7 +33,12 @@ const IndexPage = () => {
                     </h1>
                     <p className="mb-5 leading-snug">
                         Je travaille chez{' '}
-                        <a className="text-underline text-blue-500 hover:text-blue-700" href="https://marmelab.com/">
+                        <a
+                            className="text-underline text-blue-500 hover:text-blue-700"
+                            href="https://marmelab.com/"
+                            rel="nofollow noopener noreferrer"
+                            target="_blank"
+                        >
                             Marmelab
                         </a>{' '}
                         à Nancy. J&apos;aime l&apos;open source, utiliser des claviers mécaniques et personnaliser
@@ -44,6 +49,8 @@ const IndexPage = () => {
                         <a
                             className="text-underline text-blue-500 hover:text-blue-700"
                             href="https://twitter.com/rmaximedev/"
+                            rel="nofollow noopener noreferrer"
+                            target="_blank"
                         >
                             Twitter
                         </a>

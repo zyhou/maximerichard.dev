@@ -5,7 +5,6 @@
 readme
 meta de partage
 redirect https://github.com/kentcdodds/kentcdodds.com/blob/master/static/_redirects https://docs.netlify.com/routing/redirects/
-rel="noopener noreferrer"  
 404 page  
 accessibilite  
 projects  
@@ -23,7 +22,7 @@ multiple theme
 -   Voir les differnts plugins
 -   Revoir ses SVG https://jakearchibald.github.io/svgomg/ (reduire le poids + clean)
 -   json+ld, validateur https://search.google.com/structured-data/testing-tool/u/0/, https://search.google.com/test/rich-results
--   card preview https://cards-dev.twitter.com/validator, https://metatags.io/
+-   card preview https://cards-dev.twitter.com/validator, https://metatags.io/, https://developers.facebook.com/tools/debug/
 -   web.manifest, pwa, https://web.dev/add-manifest/
 -   https://browserl.ist/, https://www.gatsbyjs.org/docs/browser-support/#specify-what-browsers-your-project-supports-using-browserslist
 -   improve images https://imgbot.net/, https://www.remove.bg/
