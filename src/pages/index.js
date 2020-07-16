@@ -8,7 +8,7 @@ import SEO from '../components/Seo';
 const IndexPage = () => {
     const { desktopImage } = useStaticQuery(graphql`
         query {
-            desktopImage: file(relativePath: { eq: "large.png" }) {
+            desktopImage: file(relativePath: { eq: "desk_me.jpg" }) {
                 childImageSharp {
                     fluid(maxWidth: 650) {
                         ...GatsbyImageSharpFluid

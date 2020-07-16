@@ -2,7 +2,7 @@ module.exports = {
     title: 'Maxime Richard - Développeur full stack', // Navigation and SEO
     titleShort: 'Max', // short_name for manifest
     siteUrl: 'https://maximerichard.dev/', // Domain of your site. No trailing slash!
-    logo: 'src/images/avatar.png', // Used for SEO and manifest, path to your image from root
+    logo: 'src/images/MAX_DARK.png', // Used for SEO and manifest, path to your image from root
     description: 'Maxime Richard, zyhou, full stack développeur sur Nancy.', // Used for SEO
     keywords: 'Maxime Richard, zyhou, Nancy, Web, full stack, React, Node', // Used for SEO
     lang: 'fr', // Language Tag on <html> element
