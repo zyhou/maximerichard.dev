@@ -4,7 +4,6 @@
 
 readme
 meta de partage
-accessibilite  
 projects  
 blog/writing  
 api share web.dev  

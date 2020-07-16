@@ -69,40 +69,16 @@ const Layout = ({ children }) => {
                     </a>
                 </div>
                 <div className="flex items-center justify-center">
-                    <a
-                        href={siteMetadata.github}
-                        aria-label="github repo"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        className="p-2"
-                    >
+                    <a href={siteMetadata.github} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
                         <Github />
                     </a>
-                    <a
-                        href={siteMetadata.linkedin}
-                        aria-label="linkedin account"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        className="p-2"
-                    >
+                    <a href={siteMetadata.linkedin} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
                         <Linkedin />
                     </a>
-                    <a
-                        href={siteMetadata.twitch}
-                        aria-label="twitch account"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        className="p-2"
-                    >
+                    <a href={siteMetadata.twitch} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
                         <Twitch />
                     </a>
-                    <a
-                        href={siteMetadata.twitter}
-                        aria-label="twitter account"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        className="p-2"
-                    >
+                    <a href={siteMetadata.twitter} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
                         <Twitter />
                     </a>
                 </div>
