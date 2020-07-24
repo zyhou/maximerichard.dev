@@ -7,17 +7,41 @@ description: Informations, photos et biographie sur Maxime Richard
 
 > Clic droit pour enregistrer celle que vous voulez
 
-import croppedPhoto from '../images/MAX_BLANK.png';
-import uncroppedPhoto from '../images/MAX_DARK.png';
+import croppedPhoto from '../images/MAX_BLANK_200.png';
+import uncroppedPhoto from '../images/MAX_DARK_200.png';
+import croppedPhotoFull from '../images/MAX_BLANK.png';
+import uncroppedPhotoFull from '../images/MAX_DARK.png';
 
-<div className="flex text-center">
+<div className="flex justify-around text-center">
     <div>
         <img alt="Photo transparente de Maxime" src={croppedPhoto} />
-        <small>Photo transparente de Maxime</small>
+        <small>
+            Photo{' '}
+            <a
+                className="text-underline text-blue-500 hover:text-blue-700"
+                href={croppedPhotoFull}
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+            >
+                original
+            </a>{' '}
+            transparente de Maxime
+        </small>
     </div>
     <div>
         <img alt="Photo foncée de Maxime" src={uncroppedPhoto} />
-        <small>Photo foncée de Maxime</small>
+        <small>
+            Photo{' '}
+            <a
+                className="text-underline text-blue-500 hover:text-blue-700"
+                href={uncroppedPhotoFull}
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+            >
+                original
+            </a>{' '}
+            foncée de Maxime
+        </small>
     </div>
 </div>
 

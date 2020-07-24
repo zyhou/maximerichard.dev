@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import shareImage from '../images/MAX_DARK.png';
+import fontPreloadUrl from '../fonts/Inter-roman.var-latin.woff2';
 
 const SEO = ({ description, title }) => {
     const {
@@ -82,6 +83,8 @@ const SEO = ({ description, title }) => {
             <meta name="twitter:url" content={siteMetadata.url} />
             {/* Schema.org JSON-LD */}
             <script type="application/ld+json">{JSON.stringify(jsonLdObj)}</script>
+
+            <link rel="preload" href={fontPreloadUrl} as="font" type="font/woff2" crossOrigin />
         </Helmet>
     );
 };
