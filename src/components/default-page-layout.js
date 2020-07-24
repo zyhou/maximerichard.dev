@@ -7,7 +7,7 @@ import SEO from './Seo';
 
 const PageLayout = ({ children, pageContext: { frontmatter } }) => (
     <Layout>
-        <SEO title={frontmatter.title} />
+        <SEO title={frontmatter.title} description={frontmatter.description} />
         <section className="prose prose-sm sm:prose lg:prose-lg xl:prose-xl mx-auto">
             <MDXProvider>{children}</MDXProvider>
         </section>

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import avatar from '../images/MAX_DARK.png';
+import shareImage from '../images/MAX_DARK.png';
 
 const SEO = ({ description, title }) => {
     const {
@@ -30,8 +30,10 @@ const SEO = ({ description, title }) => {
         `,
     );
 
+    const metaTitle = title || siteMetadata.title;
     const metaDescription = description || siteMetadata.description;
-    const metaImage = `${siteMetadata.siteUrl}${avatar}`;
+    const metaImage = `${siteMetadata.siteUrl}${shareImage}`;
+
     const jsonLdObj = {
         '@context': 'http://schema.org',
         '@type': 'WebSite',
@@ -52,7 +54,7 @@ const SEO = ({ description, title }) => {
             htmlAttributes={{
                 lang: siteMetadata.lang,
             }}
-            title={title}
+            title={metaTitle}
             defaultTitle={siteMetadata.title}
             titleTemplate={`%s | ${siteMetadata.title}`}
         >
@@ -62,23 +64,22 @@ const SEO = ({ description, title }) => {
             <meta name="author" content={siteMetadata.author} />
             <meta name="copyright" content={siteMetadata.author} />
             <meta name="image" content={metaImage} />
-
             {/* OpenGraph tags */}
             <meta property="og:locale" content="fr_FR" />
             <meta property="og:type" content="website" />
-            <meta property="og:title" content={siteMetadata.title} />
+            <meta property="og:title" content={metaTitle} />
             <meta property="og:description" content={metaDescription} />
             <meta property="og:image" content={metaImage} />
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
             <meta property="og:url" content={siteMetadata.url} />
-
             {/* Twitter Card tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:creator" content={siteMetadata.twitterHandle} />
-            <meta name="twitter:title" content={siteMetadata.title} />
+            <meta name="twitter:title" content={metaTitle} />
             <meta name="twitter:description" content={metaDescription} />
             <meta name="twitter:image" content={metaImage} />
             <meta name="twitter:url" content={siteMetadata.url} />
-
             {/* Schema.org JSON-LD */}
             <script type="application/ld+json">{JSON.stringify(jsonLdObj)}</script>
         </Helmet>

@@ -41,8 +41,16 @@ const IndexPage = () => {
                         >
                             Marmelab
                         </a>{' '}
-                        à Nancy. J&apos;aime l&apos;open source, utiliser des claviers mécaniques et personnaliser
-                        Linux.
+                        à Nancy. J&apos;aime{' '}
+                        <a
+                            className="text-underline text-blue-500 hover:text-blue-700"
+                            href="https://github.com/zyhou/"
+                            rel="nofollow noopener noreferrer"
+                            target="_blank"
+                        >
+                            l&apos;open source
+                        </a>
+                        , utiliser des claviers mécaniques et personnaliser Linux.
                     </p>
                     <p className="mb-5 leading-snug">
                         Je partage ma veille technique sur{' '}
