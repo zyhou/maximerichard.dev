@@ -84,7 +84,7 @@ const SEO = ({ description, title }) => {
             {/* Schema.org JSON-LD */}
             <script type="application/ld+json">{JSON.stringify(jsonLdObj)}</script>
 
-            <link rel="preload" href={fontPreloadUrl} as="font" type="font/woff2" crossOrigin />
+            <link rel="preload" href={fontPreloadUrl} as="font" type="font/woff2" crossOrigin="anonymous" />
         </Helmet>
     );
 };

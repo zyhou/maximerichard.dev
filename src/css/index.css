@@ -27,7 +27,7 @@
 }
 
 .anchor {
-    @apply text-gray-500 absolute ml-2 pr-1 !important;
+    @apply text-blue-500 absolute ml-2 pr-1 !important;
 }
 
 .anchor {

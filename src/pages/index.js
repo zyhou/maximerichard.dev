@@ -50,7 +50,15 @@ const IndexPage = () => {
                         >
                             l&apos;open source
                         </a>
-                        , utiliser des claviers mécaniques et personnaliser Linux.
+                        , utiliser des claviers mécaniques et{' '}
+                        <a
+                            className="text-underline text-blue-500 hover:text-blue-700"
+                            href="/setup"
+                            rel="nofollow noopener noreferrer"
+                        >
+                            personnaliser Linux
+                        </a>
+                        .
                     </p>
                     <p className="mb-5 leading-snug">
                         Je partage ma veille technique sur{' '}

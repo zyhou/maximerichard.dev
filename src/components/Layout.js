@@ -46,6 +46,11 @@ const Layout = ({ children }) => {
                             </Link>
                         </li>
                         <li className="w-24">
+                            <Link to="/setup" className="hover:font-bold">
+                                setup
+                            </Link>
+                        </li>
+                        <li className="w-24">
                             <Link to="/apropos" className="hover:font-bold">
                                 à propos
                             </Link>
