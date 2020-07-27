@@ -35,7 +35,11 @@ const Layout = ({ children }) => {
         <div className="antialiased font-normal text-gray-700 max-w-6xl mx-auto">
             <header className="flex flex-wrap items-center justify-center py-4 sm:justify-between">
                 <Link to="/" className="flex items-center">
-                    <Img className="rounded-full m-2" fixed={avatarImage.childImageSharp.fixed} />
+                    <Img
+                        alt="Photo de Maxime Richard"
+                        className="rounded-full m-2"
+                        fixed={avatarImage.childImageSharp.fixed}
+                    />
                     <span className="font-bold">{siteMetadata.author}</span>
                 </Link>
                 <nav className="ml-6">

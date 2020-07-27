@@ -77,6 +77,7 @@ const IndexPage = () => {
                     </Link>
                 </article>
                 <Img
+                    alt="Bureau de Maxime Richard"
                     className="m-4 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 flex-wrap rounded-md object-contain"
                     fluid={desktopImage.childImageSharp.fluid}
                 />
