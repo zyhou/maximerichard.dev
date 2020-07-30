@@ -4,6 +4,7 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/Layout';
 import SEO from '../components/Seo';
+import { Projects } from '../components/Projects';
 
 const IndexPage = () => {
     const { desktopImage } = useStaticQuery(graphql`
@@ -51,13 +52,9 @@ const IndexPage = () => {
                             l&apos;open source
                         </a>
                         , utiliser des claviers mécaniques et{' '}
-                        <a
-                            className="text-underline text-blue-500 hover:text-blue-700"
-                            href="/setup"
-                            rel="nofollow noopener noreferrer"
-                        >
+                        <Link to="/setup/" className="text-underline text-blue-500 hover:text-blue-700">
                             personnaliser Linux
-                        </a>
+                        </Link>
                         .
                     </p>
                     <p className="mb-5 leading-snug">
@@ -81,6 +78,9 @@ const IndexPage = () => {
                     className="m-4 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 flex-wrap rounded-md object-contain"
                     fluid={desktopImage.childImageSharp.fluid}
                 />
+            </section>
+            <section className="pt-10">
+                <Projects />
             </section>
         </Layout>
     );

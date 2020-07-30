@@ -42,24 +42,24 @@ const Layout = ({ children }) => {
                     />
                     <span className="font-bold">{siteMetadata.author}</span>
                 </Link>
-                <nav className="ml-6">
+                <nav>
                     <ul className="flex">
-                        <li className="w-24">
+                        <li className="px-4">
                             <Link to="/" className="hover:font-bold">
                                 accueil
                             </Link>
                         </li>
-                        <li className="w-24">
+                        <li className="px-4">
                             <Link to="/setup" className="hover:font-bold">
                                 setup
                             </Link>
                         </li>
-                        <li className="w-24">
+                        <li className="px-4">
                             <Link to="/apropos" className="hover:font-bold">
                                 à propos
                             </Link>
                         </li>
-                        <li className="w-24">
+                        <li className="px-4">
                             <Link to="/contact" className="hover:font-bold">
                                 contact
                             </Link>
@@ -67,10 +67,8 @@ const Layout = ({ children }) => {
                     </ul>
                 </nav>
             </header>
-            <main className="px-4 py-10 max-w-3xl mx-auto sm:px-6 sm:py-12 lg:max-w-4xl lg:py-16 lg:px-8 xl:max-w-6xl">
-                {children}
-            </main>
-            <footer className="flex flex-col items-center justify-center text-xl md:mt-12 lg:mt-16 xl:mt-20">
+            <main className="px-4 pt-8 pb-4 max-w-3xl mx-auto lg:max-w-4xl lg:px-8 xl:max-w-6xl">{children}</main>
+            <footer className="flex flex-col items-center justify-center text-xl p-4">
                 <div className="flex justify-center my-4">
                     <p className="px-1">© {new Date().getFullYear()}</p>
                     <a href="/" className="px-1 font-bold">

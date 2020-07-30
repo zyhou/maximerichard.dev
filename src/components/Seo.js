@@ -36,7 +36,7 @@ const SEO = ({ description, title }) => {
     const metaImage = `${siteMetadata.siteUrl}${shareImage}`;
 
     const jsonLdObj = {
-        '@context': 'http://schema.org',
+        '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: siteMetadata.author,
         description: metaDescription,
