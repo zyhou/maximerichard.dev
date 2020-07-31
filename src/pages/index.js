@@ -6,9 +6,22 @@ import Layout from '../components/Layout';
 import SEO from '../components/Seo';
 import { Projects } from '../components/Projects';
 
+import { Github, Twitch, Twitter } from '../components/Icons';
+
 const IndexPage = () => {
-    const { desktopImage } = useStaticQuery(graphql`
+    const {
+        desktopImage,
+        site: { siteMetadata },
+    } = useStaticQuery(graphql`
         query {
+            site {
+                siteMetadata {
+                    github
+                    twitter
+                    twitch
+                }
+            }
+
             desktopImage: file(relativePath: { eq: "desk_me.jpg" }) {
                 childImageSharp {
                     fluid(maxWidth: 650) {
@@ -45,7 +58,7 @@ const IndexPage = () => {
                         à Nancy. J&apos;aime{' '}
                         <a
                             className="text-underline text-blue-500 hover:text-blue-700"
-                            href="https://github.com/zyhou/"
+                            href={siteMetadata.github}
                             rel="nofollow noopener noreferrer"
                             target="_blank"
                         >
@@ -61,7 +74,7 @@ const IndexPage = () => {
                         Je partage ma veille technique sur{' '}
                         <a
                             className="text-underline text-blue-500 hover:text-blue-700"
-                            href="https://twitter.com/rmaximedev/"
+                            href={siteMetadata.twitter}
                             rel="nofollow noopener noreferrer"
                             target="_blank"
                         >
@@ -73,11 +86,33 @@ const IndexPage = () => {
                         En savoir plus
                     </Link>
                 </article>
-                <Img
-                    alt="Bureau de Maxime Richard"
-                    className="m-4 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 flex-wrap rounded-md object-contain"
-                    fluid={desktopImage.childImageSharp.fluid}
-                />
+                <div className="m-4 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 flex-wrap">
+                    <Img
+                        alt="Bureau de Maxime Richard"
+                        className="rounded-md object-contain"
+                        fluid={desktopImage.childImageSharp.fluid}
+                    />
+                    <div className="flex items-center justify-around mt-5 text-xs">
+                        <a
+                            href={siteMetadata.twitter}
+                            className="flex items-center h-6 text-gray-600 hover:text-blue-400"
+                        >
+                            <Twitter />
+                            <span className="ml-2">Twitter</span>
+                        </a>
+                        <a
+                            href={siteMetadata.twitch}
+                            className="flex items-center h-6 text-gray-600 hover:text-purple-600"
+                        >
+                            <Twitch />
+                            <span className="ml-2">Twitch</span>
+                        </a>
+                        <a href={siteMetadata.github} className="flex items-center h-6 text-gray-600 hover:text-black">
+                            <Github />
+                            <span className="ml-2">GitHub</span>
+                        </a>
+                    </div>
+                </div>
             </section>
             <section className="pt-10">
                 <Projects />

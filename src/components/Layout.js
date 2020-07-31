@@ -76,17 +76,38 @@ const Layout = ({ children }) => {
                     </a>
                 </div>
                 <div className="flex items-center justify-center">
-                    <a href={siteMetadata.github} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
-                        <Github />
+                    <a
+                        href={siteMetadata.twitter}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="h-6 mr-4 text-gray-600 hover:text-blue-400"
+                    >
+                        <Twitter />
                     </a>
-                    <a href={siteMetadata.linkedin} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
-                        <Linkedin />
-                    </a>
-                    <a href={siteMetadata.twitch} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
+                    <a
+                        href={siteMetadata.twitch}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="h-6 mr-4 text-gray-600 hover:text-purple-600"
+                    >
                         <Twitch />
                     </a>
-                    <a href={siteMetadata.twitter} target="_blank" rel="nofollow noopener noreferrer" className="p-2">
-                        <Twitter />
+                    <a
+                        href={siteMetadata.linkedin}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="h-6 mr-4 text-gray-600 hover:text-blue-600"
+                    >
+                        <Linkedin />
+                    </a>
+
+                    <a
+                        href={siteMetadata.github}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="h-6 mr-4 text-gray-600 hover:text-black"
+                    >
+                        <Github />
                     </a>
                 </div>
             </footer>

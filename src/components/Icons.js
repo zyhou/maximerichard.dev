@@ -4,8 +4,8 @@ export const Github = () => {
     return (
         <svg
             role="img"
-            aria-label="Personal Github website"
-            className="h-4 w-4 fill-current text-gray-400 hover:text-black"
+            aria-label="Personal Github account"
+            className="fill-current h-full"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
@@ -17,8 +17,8 @@ export const Linkedin = () => {
     return (
         <svg
             role="img"
-            aria-label="Personal Linkedin website"
-            className="h-4 w-4 fill-current text-gray-400 hover:text-blue-600"
+            aria-label="Personal Linkedin account"
+            className="fill-current h-full"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
@@ -31,8 +31,8 @@ export const Twitch = () => {
     return (
         <svg
             role="img"
-            aria-label="Personal Twitch website"
-            className="h-4 w-4 fill-current text-gray-400 hover:text-purple-600"
+            aria-label="Personal Twitch account"
+            className="fill-current h-full"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
@@ -44,8 +44,8 @@ export const Twitter = () => {
     return (
         <svg
             role="img"
-            aria-label="Personal Twitter website"
-            className="h-4 w-4 fill-current text-gray-400 hover:text-blue-400"
+            aria-label="Personal Twitter account"
+            className="fill-current h-full"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
         >
