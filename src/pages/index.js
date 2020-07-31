@@ -35,8 +35,8 @@ const IndexPage = () => {
     return (
         <Layout>
             <SEO />
-            <section className="flex flex-wrap justify-center lg:justify-between items-center">
-                <article className="m-4 w-4/5 md:w-3/5 lg:w-2/5 sm:text-base lg:text-lg xl:text-xl">
+            <section className="flex flex-col items-center md:flex-row lg:justify-between">
+                <article className="m-4 w-full sm:text-base lg:text-lg xl:text-xl">
                     <p className="font-bold leading-tight">
                         <Link to="/apropos/" className="text-blue-500 hover:text-blue-700">
                             Salut, moi c&apos;est Maxime
@@ -86,7 +86,7 @@ const IndexPage = () => {
                         En savoir plus
                     </Link>
                 </article>
-                <div className="m-4 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 flex-wrap">
+                <div className="m-4 w-full">
                     <Img
                         alt="Bureau de Maxime Richard"
                         className="rounded-md object-contain"
