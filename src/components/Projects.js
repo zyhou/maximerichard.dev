@@ -7,8 +7,8 @@ const projects = [
     {
         id: 'aperoWebImage',
         title: 'Apéro Web Nancy',
-        link: 'https://twitter.com/AperoWebNancy',
-        linkText: 'Suivre sur Twitter',
+        link: 'https://aperowebnancy.netlify.app/',
+        linkText: 'Voir le site web',
         description: `Je gére le Meetup, une fois par mois environ 40 développeurs se retrouvent pour parler technique autour d'une bière.`,
     },
     {
