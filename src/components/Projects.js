@@ -9,7 +9,7 @@ const projects = [
         title: 'Apéro Web Nancy',
         link: 'https://aperowebnancy.netlify.app/',
         linkText: 'Voir le site web',
-        description: `Je gére le Meetup, une fois par mois environ 40 développeurs se retrouvent pour parler technique autour d'une bière.`,
+        description: `Je gère le Meetup, une fois par mois environ 40 développeurs se retrouvent pour parler technique autour d'une bière.`,
     },
     {
         id: 'lorraineTechHubImage',
