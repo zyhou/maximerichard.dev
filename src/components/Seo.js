@@ -35,7 +35,7 @@ const SEO = ({ description, title }) => {
     const metaDescription = description || siteMetadata.description;
     const metaImage = `${siteMetadata.siteUrl}${shareImage}`;
 
-    const jsonLdObj = {
+    const jsonLdObject = {
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: siteMetadata.author,
@@ -82,7 +82,7 @@ const SEO = ({ description, title }) => {
             <meta name="twitter:image" content={metaImage} />
             <meta name="twitter:url" content={siteMetadata.url} />
             {/* Schema.org JSON-LD */}
-            <script type="application/ld+json">{JSON.stringify(jsonLdObj)}</script>
+            <script type="application/ld+json">{JSON.stringify(jsonLdObject)}</script>
 
             <link rel="preload" href={fontPreloadUrl} as="font" type="font/woff2" crossOrigin="anonymous" />
         </Helmet>

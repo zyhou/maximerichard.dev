@@ -33,11 +33,12 @@
     },
     "devDependencies": {
         "cssnano": "^4.1.10",
-        "eslint": "^7.4.0",
-        "eslint-config-zyhou": "^0.0.6",
+        "eslint": "^7.26.0",
+        "eslint-config-zyhou": "0.0.11",
+        "eslint-plugin-jest": "24.3.6",
         "husky": "^4.2.5",
         "lint-staged": "^10.2.2",
-        "prettier": "^2.0.5",
+        "prettier": "^2.3.0",
         "tailwindcss": "^1.4.6"
     },
     "keywords": [
@@ -53,7 +54,7 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "lint": "eslint .",
-        "format": "prettier --write --check \"**/*.{js,json,md}\""
+        "format": "prettier --write --check \"**/*.{js,json,md,mdx}\""
     },
     "repository": {
         "type": "git",
@@ -69,6 +70,6 @@
     },
     "lint-staged": {
         "*.js": "eslint",
-        "*.{js,json,md}": "prettier --write"
+        "*.{js,json,md,mdx}": "prettier --write"
     }
 }

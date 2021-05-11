@@ -1,4 +1,3 @@
 {
-    "extends": ["zyhou", "zyhou/react"],
-    "rules": {}
+    "extends": ["zyhou/presets/react"]
 }

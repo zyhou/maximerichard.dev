@@ -52,8 +52,7 @@ module.exports = {
                     {
                         resolve: `gatsby-remark-autolink-headers`,
                         options: {
-                            icon:
-                                '<svg fill="currentcolor" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g><path stroke="null" d="M22.93 8.784v-3.07h-4.073l.94-4.3L16.664.8l-1.097 4.913h-4.699l1.097-4.299L8.832.8 7.735 5.713H2.566v3.07H7.11l-1.41 6.142H1v3.071h4.073l-.94 4.3 3.133.613 1.096-4.913h4.7l-1.097 4.3 3.133.613 1.096-4.913h5.17v-3.07H16.82l1.41-6.142h4.698zm-9.399 6.141H8.832l1.566-6.141h4.7l-1.567 6.141z"/></g></svg>',
+                            icon: '<svg fill="currentcolor" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g><path stroke="null" d="M22.93 8.784v-3.07h-4.073l.94-4.3L16.664.8l-1.097 4.913h-4.699l1.097-4.299L8.832.8 7.735 5.713H2.566v3.07H7.11l-1.41 6.142H1v3.071h4.073l-.94 4.3 3.133.613 1.096-4.913h4.7l-1.097 4.3 3.133.613 1.096-4.913h5.17v-3.07H16.82l1.41-6.142h4.698zm-9.399 6.141H8.832l1.566-6.141h4.7l-1.567 6.141z"/></g></svg>',
                             enableCustomId: true,
                             isIconAfterHeader: true,
                         },
@@ -100,13 +99,13 @@ module.exports = {
                     },
                     'branch-deploy': {
                         policy: [{ userAgent: '*', disallow: ['/'] }],
-                        sitemap: null,
-                        host: null,
+                        sitemap: undefined,
+                        host: undefined,
                     },
                     'deploy-preview': {
                         policy: [{ userAgent: '*', disallow: ['/'] }],
-                        sitemap: null,
-                        host: null,
+                        sitemap: undefined,
+                        host: undefined,
                     },
                 },
             },
