@@ -49,13 +49,13 @@ const IndexPage = () => {
                         Je travaille chez{' '}
                         <a
                             className="text-underline text-blue-500 hover:text-blue-700"
-                            href="https://marmelab.com/"
+                            href="https://www.tint.ai/"
                             rel="nofollow noopener noreferrer"
                             target="_blank"
                         >
-                            Marmelab
+                            Tint
                         </a>{' '}
-                        à Nancy. J&apos;aime{' '}
+                        en télétravail. J&apos;aime{' '}
                         <a
                             className="text-underline text-blue-500 hover:text-blue-700"
                             href={siteMetadata.github}
