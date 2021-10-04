@@ -99,13 +99,13 @@ module.exports = {
                     },
                     'branch-deploy': {
                         policy: [{ userAgent: '*', disallow: ['/'] }],
-                        sitemap: undefined,
-                        host: undefined,
+                        sitemap: null,
+                        host: null,
                     },
                     'deploy-preview': {
                         policy: [{ userAgent: '*', disallow: ['/'] }],
-                        sitemap: undefined,
-                        host: undefined,
+                        sitemap: null,
+                        host: null,
                     },
                 },
             },
