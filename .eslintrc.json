@@ -1,3 +1,6 @@
 {
-    "extends": ["zyhou/presets/react"]
+    "extends": ["zyhou/presets/react"],
+    "rules": {
+        "react/jsx-uses-react": 1
+    }
 }
